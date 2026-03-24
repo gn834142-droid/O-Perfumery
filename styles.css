@@ -22,6 +22,17 @@ body {
   background: linear-gradient(180deg, #0b0d10 0%, #0e1116 100%);
 }
 
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-grid img {
+  width: 45%; /* adjust spacing */
+  margin: 2.5%;
+}
+
 /* Containers */
 .container {
   width: min(1100px, 92%);

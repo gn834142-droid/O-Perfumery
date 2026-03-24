@@ -2,99 +2,99 @@
 const PRODUCTS = [
   {
     id: "perf-001",
-    name: "Berries Weekend",
+    name: "BERRIES WEEKEND",
     price: 1.00,
     tag: "Best Seller",
     image: "images/berries.jpg"
   },
   {
     id: "perf-002",
-    name: "Oud-Al-Layl",
+    name: "OUD-AL-LAYL",
     price: 170.00,
     tag: "New",
     image: "images/Oud-Al-Layl.jpg"
   },
   {
     id: "perf-003",
-    name: "Cocktail Intense",
+    name: "COCKTAIL INTENSE",
     price: 140.00,
     tag: "New",
     image: "images/cocktail intense.jpeg"
   },
   {
     id: "perf-004",
-    name: "Exchange White",
+    name: "EXCHANGE WHITE",
     price: 150.00,
     tag: "Limited",     
     image: "images/exchange white.png"
   },
    {
     id: "perf-005",
-    name: "Vintage Radio Gift Set",
-    price: 400.00,
+    name: "VINTAGE RADIO GIFTSET",
+    price: 450.00,
     tag: "Best Seller",
     image: "images/vintage gs.webp"
   },
   {
     id: "perf-006",
-    name: "Aventos",
+    name: "AVENTOS",
     price: 170.00,
     tag: "Best Seller",
     image: "images/avent.webp"
   },
   {
     id: "cap-003",
-    name: "Vintage Radio",
-    price: 350.00,
+    name: "VINTAGE RADIO",
+    price: 380.00,
     tag: "Trending",
     image: "images/vintage radio.webp"
   },
   {
     id: "cap-004",
-    name: "Encrypt",
+    name: "ENCRYPT",
     price: 150.00,
     tag: "Limited",     
     image: "images/encrypt1.webp"
   },
    {
     id: "cap-001",
-    name: "Sara",
+    name: "SARA",
     price: 160.00,
     tag: "New",
     image: "images/sara.webp"
   },
   {
     id: "cap-002",
-    name: "Proud Of You Tobacco",
+    name: "PROUD OF YOU TOBACCO",
     price: 150.00,
     tag: "Best Seller",
     image: "images/tobacco.jpeg"
   },
   {
     id: "cap-003",
-    name: "Lattafa Emeer",
+    name: "LATTAFA EMEER",
     price: 400.00,
     tag: "Trending",
     image: "images/emeer.jpg"
   },
   {
     id: "cap-004",
-    name: "Lattafa Angham",
+    name: "LATTAFA ANGHAM",
     price: 320.00,
     tag: "Limited",     
     image: "images/angham1.png"
   },
    {
     id: "cap-001",
-    name: "Classic Black Snapback",
-    price: 120.00,
+    name: "RAYHAAN KISS",
+    price: 370.00,
     tag: "New",
     image: "images/rayhaan kiss.jpg"
   },
   {
     id: "cap-004",
-    name: "Street Red Flat Brim",
-    price: 120.00,
+    name: "SUAVE",
+    price: 160.00,
     tag: "Limited",     
     image: "images/suave1.png"
   },
@@ -114,8 +114,8 @@ const PRODUCTS = [
   },
   {
     id: "cap-002",
-    name: "Royal Blue Baseball Cap",
-    price: 120.00,
+    name: "ELYSIA",
+    price: 150.00,
     tag: "Best Seller",
     image: "images/elysia.jpg"
   },

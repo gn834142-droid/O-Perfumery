@@ -3,7 +3,7 @@ const PRODUCTS = [
   {
     id: "perf-001",
     name: "Berries Weekend",
-    price: 160.00,
+    price: 1.00,
     tag: "Best Seller",
     image: "images/berries.jpg"
   },

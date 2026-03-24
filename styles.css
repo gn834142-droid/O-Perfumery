@@ -196,7 +196,7 @@ body {
   gap: 18px;
 }
 @media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(5, 1fr); }
+  .grid { grid-template-columns: repeat(6, 1fr); }
 }
 @media (max-width: 720px) {
   .grid { grid-template-columns: repeat(2, 1fr); }

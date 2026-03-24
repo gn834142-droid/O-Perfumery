@@ -385,3 +385,32 @@ paystack.charge(paymentData).then((response) => {
   console.log(response.data.authorization_url);
 });
 
+const paymentData = {
+  email: 'customer@example.com',
+  amount: 500000, // in kobo (₦5,000)
+  metadata: {
+    custom_fields: [
+      {
+        display_name: 'Product',
+        variable_name: 'product',
+        value: 'Laptop', // product name
+      },
+      {
+        display_name: 'Quantity',
+        variable_name: 'quantity',
+        value: '1',
+      },
+      {
+        display_name: 'Customer Name',
+        variable_name: 'customer_name',
+        value: 'John Doe', // customer name
+      },
+    ],
+  },
+};
+
+// Initialize payment with Paystack
+paystack.charge(paymentData).then((response) => {
+  console.log(response.data.authorization_url);
+});
+

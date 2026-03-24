@@ -28,11 +28,6 @@ body {
   justify-content: space-around;
 }
 
-.image-grid img {
-  width: 45%; /* adjust spacing */
-  margin: 2.5%;
-}
-
 /* Containers */
 .container {
   width: min(1100px, 92%);

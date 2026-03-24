@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O² Perfumery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <span class="brand__logo">💐</span>
+        <h1 class="brand__name">O² Perfumery</h1>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#shop" class="nav__link">Shop</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button id="cartToggle" class="cart-btn" aria-label="Open cart">
+        <span class="cart-btn__icon">🛒</span>
+        <span id="cartCount" class="cart-btn__count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero__content">
+      <h2 class="hero__title">Own your scent—one perfume at a time.</h2>
+      <p class="hero__subtitle">Luxirious fragrances, bold aromas, everyday elegance. Crafted for the senses and the spotlight</p>
+      <a href="#shop" class="btn btn--primary">Shop perfumes</a>
+    </div>
+    <div class="hero__bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- Shop -->
+  <main id="shop" class="shop">
+    <div class="container">
+      <div class="shop__header">
+        <h3 class="section-title">Featured fragrances</h3>
+        <div class="shop__filters">
+          <input type="text" id="searchInput" class="input input--search" placeholder="Search perfumes..." />
+          <select id="sortSelect" class="input input--select" aria-label="Sort products">
+            <option value="default">Sort by</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A–Z</option>
+            <option value="name-desc">Name: Z–A</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="productGrid" class="grid"></div>
+    </div>
+  </main>
+
+  <!-- Cart drawer -->
+  <aside id="cartDrawer" class="cart">
+    <div class="cart__header">
+      <h4 class="cart__title">Your cart</h4>
+      <button id="cartClose" class="icon-btn" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart__items"></div>
+    <div class="cart__footer">
+      <div class="cart__total">
+        <span class="cart__total-label">Total:</span>
+        <span id="cartTotal" class="cart__total-value">GHC0.00</span>
+      </div>
+      <button class="btn btn--primary btn--full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div id="cartBackdrop" class="backdrop" aria-hidden="true"></div>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <h3 class="section-title">Contact us</h3>
+        <p class="contact__text">
+          Questions or custom orders? Drop us a message-O² Perfumery is listening.
+        </p>
+        <ul class="contact__list">
+          <li><strong>Email:</strong> o²perfumery@gmail.com</li>
+          <li><strong>Phone:</strong> +233 20 745 6640</li>
+          <li><strong>Location:</strong> Accra, Ghana</li>
+          <li><strong>Hours:</strong> Mon–Sun, 9:00–18:00 GMT</li>
+        </ul>
+      </div>
+
+       <div class="reviews-section">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-card">
+      <h3>Elikem</h3>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>O² Perfumery nailed it! Their perfumes are so unique, 
+        I’ve never smelt anything like them. Definitely not a copycat brand 😊."</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Dyke</h3>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <p>"I was skeptical at first but the quality and scent 
+        profile are on point. Legit business, love the packaging too"</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Henry</h3>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Authentic vibes all around! The perfumes are fresh, original, and 
+        long-lasting. O² Perfumery is giving major luxury brands a run for their money 💪. "</p>
+    </div>
+  </div>
+
+    
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> O² Perfumery. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -358,7 +358,7 @@ checkoutBtn.addEventListener("click", () => {
   const totalAmount = cartTotal() * 100; // Paystack expects amount in pesewas
 
   var handler = PaystackPop.setup({
-    key: 'pk_test_dd191b31799574ae2d1267c07eeb2f41021e8dda', // Replace with your public key
+    key: 'pk_live_086cc8b002940f8e34ba78ac39144ca871c41009', // Replace with your public key
     email: 'gn834142@gmail.com',
     amount: totalAmount,
     currency: 'GHS',

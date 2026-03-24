@@ -341,13 +341,6 @@ checkoutBtn.addEventListener("click", () => {
     email: 'gn834142@gmail.com',
     amount: totalAmount,
     currency: 'GHS',
-    metadata: {
-      {
-      display_name: "Customer Name",
-      variable_name: "cucstomer_name",
-      value: "Richmond" //replace with actual customer name variable
-    },
-    
     callback: function(response) {
       alert('Payment successful! Transaction ref: ' + response.reference);
       cart = []; // clear cart

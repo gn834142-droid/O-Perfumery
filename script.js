@@ -360,3 +360,28 @@ if (product.stock_quantity > 0) {
   document.getElementById("soldOutMsg").style.display = "block";
 }
 
+const paystack = new Paystack(process.env.PAYSTACK_SECRET_KEY);
+
+const paymentData = {
+  email: 'customer@example.com',
+  amount: 500000, // in kobo (e.g., ₦5,000)
+  metadata: {
+    custom_fields: [
+      {
+        display_name: 'Ordered Items',
+        variable_name: 'order_items',
+        value: 'Laptop, Mouse, Keyboard', // comma-separated products
+      },
+      {
+        display_name: 'Order ID',
+        variable_name: 'order_id',
+        value: 'ORD-12345', // your internal order ID
+      },
+    ],
+  },
+};
+
+paystack.charge(paymentData).then((response) => {
+  console.log(response.data.authorization_url);
+});
+

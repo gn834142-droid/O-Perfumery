@@ -117,28 +117,7 @@ const PRODUCTS = [
     name: "Royal Blue Baseball Cap",
     price: 120.00,
     tag: "Best Seller",
-    image: "images/"
-  },
-   {
-    id: "cap-001",
-    name: "Classic Black Snapback",
-    price: 120.00,
-    tag: "New",
-    image: "images/"
-  },
-  {
-    id: "cap-002",
-    name: "Royal Blue Baseball Cap",
-    price: 120.00,
-    tag: "Best Seller",
     image: "images/elysia.jpg"
-  },
-  {
-    id: "cap-003",
-    name: "Minimalist White Dad Hat",
-    price: 130.00,
-    tag: "Trending",
-    image: "images/"
   },
 ];
 

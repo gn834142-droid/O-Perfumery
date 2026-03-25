@@ -3,7 +3,7 @@ const PRODUCTS = [
   {
     id: "perf-001",
     name: "BERRIES WEEKEND",
-    price: 1.00,
+    price: 160.00,
     tag: "Best Seller",
     image: "images/berries.jpg"
   },
@@ -100,7 +100,7 @@ const PRODUCTS = [
   },
   {
     id: "cap-004",
-    name: "Street Red Flat Brim",
+    name: "SHAMOKI",
     price: 120.00,
     tag: "Limited",     
     image: "images/shamoki1.jpg"

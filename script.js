@@ -339,8 +339,19 @@ checkoutBtn.addEventListener("click", () => {
   var handler = PaystackPop.setup({
     key: 'pk_live_086cc8b002940f8e34ba78ac39144ca871c41009', // Replace with your public key
     email: 'gn834142@gmail.com',
+    first_name: customerFirstName,
+    last_name: customerLastName,
+    phone: customerPhone,
     amount: totalAmount,
     currency: 'GHS',
+    metadata: {
+      customer_fields: [
+        {
+          display_name: "Product",
+          variable_name: "product_name",
+          value: productName
+        }
+        ]
     callback: function(response) {
       alert('Payment successful! Transaction ref: ' + response.reference);
       cart = []; // clear cart

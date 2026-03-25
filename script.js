@@ -336,17 +336,7 @@ checkoutBtn.addEventListener("click", () => {
 
   const totalAmount = cartTotal() * 100; // Paystack expects amount in pesewas
 
-  document.getElementById('checkout-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  
-  const customerFirstName = document.getElementById('firstName').value;
-  const customerLastName = document.getElementById('lastName').value;
-  const customerPhone = document.getElementById('phone').value;
-  const customerEmail = document.getElementById('email').value;
-  
-  // Call Paystack function with these values
-  payWithPaystack(customerFirstName, customerLastName, customerPhone, customerEmail);
-});
+ 
 
   var handler = PaystackPop.setup({
     key: 'pk_live_086cc8b002940f8e34ba78ac39144ca871c41009', // Replace with your public key

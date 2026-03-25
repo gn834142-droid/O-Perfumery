@@ -67,6 +67,22 @@
       <h4 class="cart__title">Your cart</h4>
       <button id="cartClose" class="icon-btn" aria-label="Close cart">✕</button>
     </div>
+
+  <!-- Add form here -->
+  <form id="checkout-form">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text" required>
+    
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" type="text" required>
+    
+    <label for="phone">Phone:</label>
+    <input id="phone" type="tel" required>
+    
+    <label for="email">Email:</label>
+    <input id="email" type="email" required>
+  </form>
+    
     <div id="cartItems" class="cart__items"></div>
     <div class="cart__footer">
       <div class="cart__total">

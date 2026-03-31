@@ -101,7 +101,7 @@ const PRODUCTS = [
   {
     id: "cap-004",
     name: "SHAMOKI",
-    price: 120.00,
+    price: 220.00,
     tag: "Limited",     
     image: "images/shamoki1.jpg"
   },
